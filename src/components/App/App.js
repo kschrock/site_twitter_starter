@@ -6,8 +6,8 @@ import Advertisements from "../Advertisements/Advertisements"
 import "./App.css"
 
 const defaultUserProfile = {
-  name: "Code Path",
-  handle: "codepath",
+  name: "Kordell",
+  handle: "codepath intern",
   numTweets: "1.2k",
   numFollowers: "2.5m",
 }
@@ -25,8 +25,8 @@ export default function App({ userProfile = defaultUserProfile }) {
     <div className="app">
       <Navbar />
       <main className="main">
-        <UserProfile />
-        <Feed />
+        <UserProfile user={userProfile} />
+        <Feed tweets={tweets} addTweet={addTweet} />
         <Advertisements />
       </main>
     </div>
