@@ -12,7 +12,7 @@ const defaultUserProfile = {
   numFollowers: "2.5m",
 }
 export default function App({ userProfile = defaultUserProfile }) {
-  const [tweets, setTweets] = useState([])
+  const [tweets, setTweets] = useState([])//this is a hook
 
   const addTweet = (newTweet) => {
     setTweets((oldTweets) => [
