@@ -38,13 +38,14 @@ export default function TweetInput({addTweet}) {
     // { ...newTweet, id: oldTweets.length, name: userProfile.name, handle: userProfile.handle }
     addTweet({
       id: tweet.id,
-      name: `Kordell`,
-      handle: `Hello world`,
+      name: tweet.name, 
+      handle: tweet.handle,
       text: tweet,
-      comments: 1,
-      retweets: 1,
-      likes: 1,
+      comments: tweet.comments,
+      retweets: tweet.retweets,
+      likes: tweet.likes,
     })
+    setHidden("False");
     // alert(tweet)
     setTweet("")
   }
